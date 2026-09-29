@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Our Services | Elite UK Consulting</title>
+  <meta name="description" content="Explore expert UK university admission services including UCAS undergraduate assistance, Master/PhD research proposals, visa counseling, and foundation programs."/>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1152d4",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light text-[#111318] antialiased min-h-screen flex flex-col">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 w-full bg-[#101622]/90 backdrop-blur-md border-b border-white/10 px-6 md:px-20 py-4 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group cursor-pointer">
+        <div class="bg-primary text-white p-2 rounded-lg shadow-md shadow-primary/30 group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined block">school</span>
+        </div>
+        <h2 class="text-white text-xl font-bold tracking-tight">Elite UK <span class="text-primary">Consulting</span></h2>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-10">
+        <a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="index.html">Home</a>
+        <a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="about.html">About Us</a>
+        <a class="text-sm font-semibold text-white transition-colors border-b-2 border-primary pb-1" href="services.html">Services</a>
+        <a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="open-consultation-modal hidden sm:flex bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md shadow-primary/20 active:scale-95">
+          Book a Free Consultation
+        </button>
+        <button class="mobile-menu-btn md:hidden p-2 text-white hover:text-primary">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu hidden md:hidden bg-[#101622] border-t border-white/10 px-6 py-4 space-y-3">
+      <a class="block text-white/80 hover:text-white font-semibold py-2 border-b border-white/5" href="index.html">Home</a>
+      <a class="block text-white/80 hover:text-white font-semibold py-2 border-b border-white/5" href="about.html">About Us</a>
+      <a class="block text-white font-semibold py-2 border-b border-white/5" href="services.html">Services</a>
+      <a class="block text-white/80 hover:text-white font-semibold py-2" href="contact.html">Contact</a>
+      <button class="open-consultation-modal w-full bg-primary text-white py-3 rounded-lg font-bold text-sm">
+        Book a Free Consultation
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Services Hero -->
+    <section class="relative w-full py-24 md:py-32">
+      <div class="absolute inset-0 z-0 h-full w-full overflow-hidden">
+        <img alt="Oxford University Campus" class="h-full w-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH6W5NJbuHAtxmwiNSh9Im4SyGZfqD53r1A7wAQuJQtIfDNNEe0JWXO6Igari59dTvZPbHfrcTvy0kIJTo3UMNb-EyOuNp8_am9feEX7oX5nHUka85duA8KSyHRvoAy1jkEE3PYlp3g5m4tDt74BUIWl8i0nph8fDl6ulgfKCms3WGH7ns_q2kSiTNahMg2lmJYMSKH-aP-Jg5mCzCcYBBIx-UR1C8iQxSIu1TnqV7kRRopyGbJdaeKkgyOuAlAOPk9mYOEpK8hXB3"/>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#101622] via-[#101622]/85 to-transparent"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-20 text-white">
+        <div class="max-w-3xl space-y-6">
+          <span class="inline-block rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white">
+            Our Core Expertise
+          </span>
+          <h1 class="text-4xl font-black tracking-tight text-white md:text-6xl drop-shadow-sm">
+            Expert UK Admission Services
+          </h1>
+          <p class="text-lg md:text-xl leading-relaxed text-gray-200 font-light max-w-2xl">
+            Professional guidance and strategic support tailored for your unique academic journey in the United Kingdom. We simplify the complex path to your future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="bg-white py-20 -mt-8 rounded-t-3xl relative z-20">
+      <div class="max-w-7xl mx-auto px-6 md:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="group relative flex flex-col justify-between p-8 bg-background-light border border-slate-200 rounded-xl hover:border-primary/50 hover:shadow-2xl transition-all duration-300 card-hover-effect">
+            <div>
+              <div class="mb-6 flex size-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-3xl">school</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#111318] mb-3">Undergraduate Admissions</h3>
+              <p class="text-[#616f89] text-sm leading-relaxed mb-6">
+                Comprehensive UCAS guidance and expert personal statement reviews to help school leavers secure spots at top-tier UK universities.
+              </p>
+            </div>
+            <button class="open-consultation-modal inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline text-left">
+              Book Support <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+
+          <div class="group relative flex flex-col justify-between p-8 bg-background-light border border-slate-200 rounded-xl hover:border-primary/50 hover:shadow-2xl transition-all duration-300 card-hover-effect">
+            <div>
+              <div class="mb-6 flex size-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-3xl">history_edu</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#111318] mb-3">Postgraduate Admissions</h3>
+              <p class="text-[#616f89] text-sm leading-relaxed mb-6">
+                Specialized support for Masters and PhD applications, including research proposal editing and academic interview preparation.
+              </p>
+            </div>
+            <button class="open-consultation-modal inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline text-left">
+              Book Support <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+
+          <div class="group relative flex flex-col justify-between p-8 bg-background-light border border-slate-200 rounded-xl hover:border-primary/50 hover:shadow-2xl transition-all duration-300 card-hover-effect">
+            <div>
+              <div class="mb-6 flex size-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-3xl">travel</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#111318] mb-3">Visa & Immigration Support</h3>
+              <p class="text-[#616f89] text-sm leading-relaxed mb-6">
+                Expert assistance with compliance and student visa applications, ensuring all documentation meets current UKVI standards.
+              </p>
+            </div>
+            <button class="open-consultation-modal inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline text-left">
+              Book Support <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+
+          <div class="group relative flex flex-col justify-between p-8 bg-background-light border border-slate-200 rounded-xl hover:border-primary/50 hover:shadow-2xl transition-all duration-300 card-hover-effect">
+            <div>
+              <div class="mb-6 flex size-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-3xl">steps</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#111318] mb-3">Foundation Year Placement</h3>
+              <p class="text-[#616f89] text-sm leading-relaxed mb-6">
+                Strategic bridge program placement to help international students meet entrance requirements for prestigious UK universities.
+              </p>
+            </div>
+            <button class="open-consultation-modal inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline text-left">
+              Book Support <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Callout Banner -->
+    <section class="py-20 bg-background-light">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="relative overflow-hidden rounded-3xl bg-primary px-8 py-16 text-center text-white shadow-2xl">
+          <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
+          <div class="absolute -left-20 -bottom-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
+          <div class="relative z-10 flex flex-col items-center space-y-6">
+            <h2 class="text-3xl md:text-5xl font-black tracking-tight">Ready to Start Your UK Journey?</h2>
+            <p class="max-w-2xl text-lg font-medium text-white/90 leading-relaxed">
+              Book a free diagnostic call today with our expert advisors and take the first step toward your academic future in the United Kingdom.
+            </p>
+            <button class="open-consultation-modal bg-white text-primary hover:bg-slate-100 px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-lg active:scale-95">
+              Get Started Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reusable Consultation Modal -->
+  <div id="consultation-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative modal-animate border border-slate-200">
+      <button class="close-consultation-modal absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      
+      <div class="mb-6 space-y-1">
+        <div class="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
+          <span class="material-symbols-outlined text-sm">calendar_month</span> Book Appointment
+        </div>
+        <h3 class="text-2xl font-bold text-slate-900">Free Diagnostic Consultation</h3>
+        <p class="text-xs text-slate-500">Speak directly with an Oxbridge/Russell Group admissions specialist.</p>
+      </div>
+
+      <form class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">First Name</label>
+            <input required type="text" class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5" placeholder="Jane"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Last Name</label>
+            <input required type="text" class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5" placeholder="Doe"/>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Email Address</label>
+          <input required type="email" class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5" placeholder="jane@example.com"/>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Target University / Major</label>
+          <input type="text" class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5" placeholder="e.g. Oxford - Computer Science"/>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Preferred Contact Time</label>
+          <select class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5">
+            <option>Morning (9:00 AM - 12:00 PM GMT)</option>
+            <option>Afternoon (12:00 PM - 4:00 PM GMT)</option>
+            <option>Evening (4:00 PM - 7:00 PM GMT)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-xl shadow-lg transition-all active:scale-95">
+          Confirm Consultation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-background-dark text-white/60 py-16 px-6 md:px-20 mt-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="space-y-6">
+        <div class="flex items-center gap-2">
+          <div class="bg-primary text-white p-1.5 rounded-lg">
+            <span class="material-symbols-outlined block">school</span>
+          </div>
+          <h2 class="text-white text-xl font-bold tracking-tight">Elite UK</h2>
+        </div>
+        <p class="text-sm leading-relaxed">The premier education consultancy for international students seeking admission to top-tier UK universities.</p>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-white font-bold text-sm uppercase tracking-widest">Services</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a class="hover:text-white transition-colors" href="services.html">Undergraduate Admissions</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Postgraduate & PhD</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Visa & Immigration</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Foundation Year</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-white font-bold text-sm uppercase tracking-widest">Company</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a class="hover:text-white transition-colors" href="about.html">About Us</a></li>
+          <li><a class="hover:text-white transition-colors" href="about.html">Our Consultants</a></li>
+          <li><a class="hover:text-white transition-colors" href="index.html">Success Stories</a></li>
+          <li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-white font-bold text-sm uppercase tracking-widest">Trust & Safety</h4>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3 border border-white/10 p-3 rounded-lg bg-white/5">
+            <span class="material-symbols-outlined text-primary">verified</span>
+            <div class="text-[10px] uppercase font-bold text-white/70">British Council Certified</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-xs flex flex-col md:flex-row justify-between gap-4">
+      <p>© 2026 Elite UK Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

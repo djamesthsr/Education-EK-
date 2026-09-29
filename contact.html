@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Contact Our Experts | Elite UK Consulting</title>
+  <meta name="description" content="Contact Elite UK Consulting headquarters in London. Send an inquiry or reach out for Oxford, Cambridge, and Russell Group application guidance."/>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1152d4",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 w-full bg-[#101622]/90 backdrop-blur-md border-b border-white/10 px-6 md:px-20 py-4 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group cursor-pointer">
+        <div class="bg-primary text-white p-2 rounded-lg shadow-md shadow-primary/30 group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined block">school</span>
+        </div>
+        <h2 class="text-white text-xl font-bold tracking-tight">Elite UK <span class="text-primary">Consulting</span></h2>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-10">
+        <a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="index.html">Home</a>
+        <a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="about.html">About Us</a>
+        <a class="text-sm font-semibold text-white/80 hover:text-white transition-colors" href="services.html">Services</a>
+        <a class="text-sm font-semibold text-white transition-colors border-b-2 border-primary pb-1" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="open-consultation-modal hidden sm:flex bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md shadow-primary/20 active:scale-95">
+          Book a Free Consultation
+        </button>
+        <button class="mobile-menu-btn md:hidden p-2 text-white hover:text-primary">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu hidden md:hidden bg-[#101622] border-t border-white/10 px-6 py-4 space-y-3">
+      <a class="block text-white/80 hover:text-white font-semibold py-2 border-b border-white/5" href="index.html">Home</a>
+      <a class="block text-white/80 hover:text-white font-semibold py-2 border-b border-white/5" href="about.html">About Us</a>
+      <a class="block text-white/80 hover:text-white font-semibold py-2 border-b border-white/5" href="services.html">Services</a>
+      <a class="block text-white font-semibold py-2" href="contact.html">Contact</a>
+      <button class="open-consultation-modal w-full bg-primary text-white py-3 rounded-lg font-bold text-sm">
+        Book a Free Consultation
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Hero Banner -->
+    <div class="relative bg-[#101622] h-[360px] md:h-[420px] w-full flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Classic British university building" class="w-full h-full object-cover opacity-40 blur-[1px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBneRxa4vfNGJpJLqogYCpew2mWLT4LKhxsJEV_h0rA-L6iWnrEozZuFTeBi59Bwd2Qp5R9Hs22lW68xGeFb0mG_eANE7oYYG5EAJcZ7Nto22hhfsKzyUPfQM6ab36t65BlXw8l8x0fGi2aGYnwxtRtX99KaXilrJpMOf-_t1Lyr6i6nwm8F1rDZeUV19M6BuX7LDCbNHGIFg6DOorbB-Z4L0NzepcJsEa3OD6-Ji5Jb_RVDir5YIrWkmU0Oyyljx7v8oNs9tNfJtfs"/>
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/30 to-[#101622] mix-blend-multiply"></div>
+      </div>
+      <div class="relative z-10 text-center px-6 max-w-4xl mx-auto space-y-4">
+        <span class="inline-block px-3.5 py-1.5 rounded-full bg-primary/30 border border-primary/40 backdrop-blur-md text-xs font-bold uppercase tracking-wider text-blue-200">
+          We are here to help
+        </span>
+        <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Get in Touch</h1>
+        <p class="text-lg text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+          Start your journey to academic excellence today. Our experts are ready to guide you to the UK's top institutions.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Form & Info Grid -->
+    <section class="flex-grow -mt-16 relative z-20 pb-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            
+            <!-- Left Column: Form -->
+            <div class="p-8 md:p-12 lg:p-16 space-y-8">
+              <div>
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Send us a Message</h2>
+                <p class="text-slate-500 text-sm">Fill out the form below and an admissions consultant will get back to you within 24 hours.</p>
+              </div>
+              
+              <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="first-name">First Name</label>
+                    <input required class="block w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm py-3" id="first-name" placeholder="Jane" type="text"/>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="last-name">Last Name</label>
+                    <input required class="block w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm py-3" id="last-name" placeholder="Doe" type="text"/>
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="email">Email Address</label>
+                  <input required class="block w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm py-3" id="email" placeholder="jane@example.com" type="email"/>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="service">Service of Interest</label>
+                  <select class="block w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm py-3" id="service">
+                    <option>Undergraduate UCAS Guidance</option>
+                    <option>Postgraduate & PhD Admissions</option>
+                    <option>Visa & Immigration Compliance</option>
+                    <option>Foundation Year Placement</option>
+                    <option>General Inquiry</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="message">How can we help you?</label>
+                  <textarea required class="block w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm py-3" id="message" placeholder="Tell us about your academic background and goals..." rows="4"></textarea>
+                </div>
+                <div class="pt-2">
+                  <button class="w-full md:w-auto flex justify-center items-center py-3.5 px-8 border border-transparent rounded-xl shadow-lg text-base font-bold text-white bg-primary hover:bg-primary/90 focus:outline-none transition-all duration-200 active:scale-95 gap-2" type="submit">
+                    Submit Inquiry
+                    <span class="material-symbols-outlined text-sm">send</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Right Column: Info & Map -->
+            <div class="bg-slate-50 p-8 md:p-12 lg:p-16 border-l border-slate-200 flex flex-col justify-between space-y-10">
+              <div>
+                <h3 class="text-xl font-bold text-slate-900 mb-8">Visit Our Headquarters</h3>
+                <div class="space-y-6">
+                  <div class="flex items-start gap-4">
+                    <div class="flex items-center justify-center size-11 rounded-lg bg-primary/10 text-primary shrink-0">
+                      <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-slate-900">London Headquarters</p>
+                      <p class="mt-1 text-sm text-slate-600 leading-relaxed">
+                        123 Academic Way, Westminster<br/>
+                        London, SW1A 1AA, United Kingdom
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="flex items-center justify-center size-11 rounded-lg bg-primary/10 text-primary shrink-0">
+                      <span class="material-symbols-outlined">phone</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-slate-900">Call Us Directly</p>
+                      <p class="mt-1 text-sm text-slate-600">+44 20 7946 0123</p>
+                      <p class="text-xs text-slate-400 mt-1">Mon - Fri, 9:00 AM – 6:00 PM GMT</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="flex items-center justify-center size-11 rounded-lg bg-primary/10 text-primary shrink-0">
+                      <span class="material-symbols-outlined">email</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-slate-900">Email Us</p>
+                      <a class="mt-1 text-sm text-primary hover:underline font-medium block" href="mailto:admissions@eliteuk.com">
+                        admissions@eliteuk.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Map Placeholder Image -->
+              <div class="rounded-xl overflow-hidden shadow-md border border-slate-200 h-60 bg-slate-200 relative group">
+                <img alt="Map of London area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATAkHJpWvcxgRMUWNZdhPlgYKGZ8BMbC1UcxVZ747bf_SjlMdi1M6ceD_6AvJvu44rvnMypj93G4UxSgJVwKkUcaAp5Vco00M86wCG6nvVs5xQsMMh30q3KgMppiHH7ku0hhOPxI0Fp8J5MwHDfW4Ztwrqsa9Gc8_E0XMLTz-9PUxSDTsMWIuDHTT1b52_uvjeKJ-AAuacP-e2lxTAs8A0uLXyH5beD2VNPgLG5KDtIDTTaotppEBdi1OeVDUFq8a8JF0ma9cPygof"/>
+                <div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+                <div class="absolute bottom-4 left-4 bg-white px-3 py-1.5 rounded-lg shadow-md text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px] text-primary">map</span>
+                  Westminster, London
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reusable Consultation Modal -->
+  <div id="consultation-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative modal-animate border border-slate-200">
+      <button class="close-consultation-modal absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      
+      <div class="mb-6 space-y-1">
+        <div class="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
+          <span class="material-symbols-outlined text-sm">calendar_month</span> Book Appointment
+        </div>
+        <h3 class="text-2xl font-bold text-slate-900">Free Diagnostic Consultation</h3>
+        <p class="text-xs text-slate-500">Speak directly with an Oxbridge/Russell Group admissions specialist.</p>
+      </div>
+
+      <form class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">First Name</label>
+            <input required type="text" class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5" placeholder="Jane"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Last Name</label>
+            <input required type="text" class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5" placeholder="Doe"/>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Email Address</label>
+          <input required type="email" class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5" placeholder="jane@example.com"/>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Target University / Major</label>
+          <input type="text" class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5" placeholder="e.g. Oxford - Computer Science"/>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Preferred Contact Time</label>
+          <select class="w-full rounded-lg border-slate-300 bg-slate-50 text-slate-900 text-sm py-2.5">
+            <option>Morning (9:00 AM - 12:00 PM GMT)</option>
+            <option>Afternoon (12:00 PM - 4:00 PM GMT)</option>
+            <option>Evening (4:00 PM - 7:00 PM GMT)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-xl shadow-lg transition-all active:scale-95">
+          Confirm Consultation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-background-dark text-white/60 py-16 px-6 md:px-20 mt-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="space-y-6">
+        <div class="flex items-center gap-2">
+          <div class="bg-primary text-white p-1.5 rounded-lg">
+            <span class="material-symbols-outlined block">school</span>
+          </div>
+          <h2 class="text-white text-xl font-bold tracking-tight">Elite UK</h2>
+        </div>
+        <p class="text-sm leading-relaxed">The premier education consultancy for international students seeking admission to top-tier UK universities.</p>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-white font-bold text-sm uppercase tracking-widest">Services</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a class="hover:text-white transition-colors" href="services.html">Undergraduate Admissions</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Postgraduate & PhD</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Visa & Immigration</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Foundation Year</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-white font-bold text-sm uppercase tracking-widest">Company</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a class="hover:text-white transition-colors" href="about.html">About Us</a></li>
+          <li><a class="hover:text-white transition-colors" href="about.html">Our Consultants</a></li>
+          <li><a class="hover:text-white transition-colors" href="index.html">Success Stories</a></li>
+          <li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-white font-bold text-sm uppercase tracking-widest">Trust & Safety</h4>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3 border border-white/10 p-3 rounded-lg bg-white/5">
+            <span class="material-symbols-outlined text-primary">verified</span>
+            <div class="text-[10px] uppercase font-bold text-white/70">British Council Certified</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-xs flex flex-col md:flex-row justify-between gap-4">
+      <p>© 2026 Elite UK Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
